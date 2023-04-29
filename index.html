@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.img.jpg');
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 51px;
+        top: 10px;
+        font-size: 12px;
+        font-family: 'Permanent Marker', cursive;
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 27px;
+    }
+
+    .left img {
+        width: 78px;
+        filter: invert(100%);
+    }
+
+    .mid {
+        display: block;
+        width: 33%;
+        margin: 6px auto;
+        /* border: 2px solid green; */
+        font-family: 'Cinzel Decorative', cursive;
+
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        /* border: 2px solid yellow; */
+        display: inline-block;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+
+        display: inline-block;
+        font-size: 14px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 13px;
+
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: gray;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 10px;
+        cursor: pointer;
+        font-family: 'Julius Sans One', sans-serif;
+    }
+
+    .btn:hover {
+        background-color: rgb(57, 57, 57);
+    }
+
+    .container {
+        /* border: 2px solid white; */
+        margin: 113px 55px;
+        padding: 44px 39px;
+        width: 33%;
+        border-radius: 13px;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 55%;
+        padding: 4px;
+        border: 2px solid black;
+        margin: 3px auto;
+        font-size: 16px;
+        border-radius: 6px;
+        font-family: 'Julius Sans One', sans-serif;
+        ;
+
+    }
+
+    .container h1 {
+
+        text-align: center;
+        font-family: 'Italianno', cursive;
+
+    }
+
+    .container button {
+        display: block;
+        width: 57%;
+        margin: 20px auto;
+    }
+
+    a#login-button.button.logout.login.w-button {
+
+        border: 2px solid gray;
+        color: white;
+        margin: 0px 9px;
+        position: absolute;
+        left: 336px;
+        top: 25px;
+        font-size: 10px;
+        font-family: 'Julius Sans One', sans-serif;
+        padding: 4px 14px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    a#login-button.button.logout.login.w-button:hover {
+        background-color: rgb(57, 57, 57);
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/gym.png" alt="">
+            <div>
+                GYM FITNESS
+            </div>
+        </div>
+
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a
+                        href="https://www.google.com/search?q=About+God&rlz=1C1YTUH_enIN1041IN1041&sxsrf=APwXEddvx72OFMq8G0U3_aSLEjI9pm4eEg%3A1681144332173&ei=DDo0ZJqPCtPm4-EPzuGE2AM&ved=0ahUKEwiaxfDV3p_-AhVT8zgGHc4wATsQ4dUDCA8&uact=5&oq=About+God&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECCMQJzIICAAQigUQkQIyCggAEIAEEBQQhwIyBQgAEIAEMgUIABCABDIFCAAQgAQyCAgAEIoFEJECMggIABCKBRCRAjIFCAAQgAQyBQgAEIAEOgoIABBHENYEELADOgoIABCKBRCwAxBDOgsIABCABBCxAxCDAToICAAQgAQQsQM6CwgAEIoFELEDEIMBSgQIQRgAUJ8LWK0QYOEWaAFwAXgAgAGpAYgB2AOSAQMwLjOYAQCgAQHIAQrAAQE&sclient=gws-wiz-serp">About
+                        Us</a></li>
+                <li><a href="https://commons.wikimedia.org/wiki/File:Human_body_features-en_dark_skin.svg">Fitness
+                        Tracker</a></li>
+                <li><a href="https://chat.openai.com/chat">Contact Us</a></li>
+
+            </ul>
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn" onclick="location.href='http://in.pinterest.com/pin/576812664769667713/'"> Call
+                Us</button>
+            <button class="btn" onclick="location.href='http://mail.google.com/mail/u/0/'">Email Us</button>
+        </div>
+    </header>
+    <a id="login-button" ms-hide-element="true" href="" class="button logout login w-button">Login</a>
+
+    <div class="container">
+        <h1>Join The Best Now </h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Gnder">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Email">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
